@@ -11,8 +11,7 @@ export class HealthCheck extends Component {
             id: this.props.healthCheck.id,
             patientid: this.props.healthCheck.patientid,
             date: this.props.healthCheck.date,
-            healthstatus: this.props.healthCheck.healthstatus,
-           // symptoms: this.props.healthCheck.symptoms
+            healthstatus: this.props.healthCheck.healthstatus
         }
     }
 
