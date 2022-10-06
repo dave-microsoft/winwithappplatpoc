@@ -12,7 +12,7 @@ export class HealthCheck extends Component {
             patientid: this.props.healthCheck.patientid,
             date: this.props.healthCheck.date,
             healthstatus: this.props.healthCheck.healthstatus,
-            symptoms: this.props.healthCheck.symptoms
+           // symptoms: this.props.healthCheck.symptoms
         }
     }
 
@@ -24,13 +24,7 @@ export class HealthCheck extends Component {
                     <td>{this.state.patientid}</td>
                     <td>{this.state.date}</td>
                     <td>{this.state.healthstatus}</td>
-                    <td>
-                        <ul>
-                            {this.state.symptoms.map(symptom, index =>
-                                <li key={index}>{symptom}</li>
-                            )}
-                        </ul>
-                    </td>
+                   
                     <td>
                         <button onClick={this.props.onDelete}>Delete</button>
                     </td>
